@@ -28,6 +28,8 @@ header {
 
 .max-width-wrapper {
   padding: 0 16px;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .intro-chunk {
