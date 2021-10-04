@@ -14,59 +14,76 @@ body {
   max-height: 100%;
 }
 
-/* Add styles here! */
+html {
+  font-size: 18px;
+}
 
-h2 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
-header {
-  margin-top: 96px;
-  max-height: 50%;
-  border-bottom: 8px solid hsl(0deg, 0%, 40%);
-}
+/* Add styles here! */
 
+header {
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
 .max-width-wrapper {
-  padding: 0 16px;
-  max-width: 50%;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 24px
 }
 
 .intro-chunk {
-  margin-bottom: 128px;
+  padding-top: 96px;
+  max-width: 400px;
+  
 }
 
-.title {
-  margin-bottom: 48px;
+.intro-chunk p {
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
-strong {
+.intro-chunk strong {
   color: hsl(160deg, 100%, 30%);
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 48px;
 }
 
 main {
   background-color: hsl(0deg, 0%, 60%);
-  padding-top: 128px;
-  padding-bottom: 192px;
-  max-height: 50%;
-}
-
-section.max-width-wrapper {
-  /* max-width: 800px; */
-  max-width: 50%;
-  margin: 0 auto;
-  background-color: hsl(0deg, 0%, 100%);
-  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  border-top: 8px hsl(0deg, 0%, 40%) solid;
+  padding: 96px 0; 
 }
 
 .card {
-  padding-top: 8px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 24px;
+  margin: -24px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .indented-heading {
-  display: inline-block;
-  margin-left: -32px;
-  padding: 16px 24px;
+  display: inline-block; /* fit-content wont work without display: inline-block not sure why? */
+  width: fit-content;
   background-color: hsl(45deg, 100%, 50%);
-  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  margin-top: -16px;
+  margin-left: -32px;
+  padding: 16px 32px;
+  border-bottom: 8px hsl(45deg, 100%, 40%) solid;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
